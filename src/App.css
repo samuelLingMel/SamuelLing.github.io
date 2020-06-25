@@ -1,38 +1,75 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body {
+  font-family: 'Pirata One', cursive;
+  background-color: ivory;
+}
+
+.projects main {
+  display: grid;
+  grid-template-columns: 60px 600px 60px;
+}
+
+.main-projects, .contact, .about {
+  display: block;
+  margin: 0 auto;
+  width: 50% ;
+  min-width: 750px;
+}
+
+nav {
+  padding-top: 3px;
+  background-color: ivory;
+}
+
+nav .border {
+  padding: 0 5px;
+  border-right: 2px solid grey;
+}
+
+nav .last {
+  padding-left: 5px;
+}
+
+.sticky-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* z-index: -1; */
+}
+
+aside .buttons {
+  height: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.top-button {
+  position: fixed;
+  top: 47%;
+  transform: translateY(-50%);
+}
+
+.bottom-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact, .about {
+  padding: 5px 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.go-image {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
