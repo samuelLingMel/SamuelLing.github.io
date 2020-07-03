@@ -1,35 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in;
+}
 
 body {
-  font-family: 'Pirata One', cursive;
-  background-color: ivory;
+  font-family: 'Libre Baskerville', serif;
+  background-color: black;
+  color: ivory;
 }
 
 .projects main {
   display: grid;
   grid-template-columns: 60px 600px 60px;
+
 }
 
 .main-projects, .contact, .about {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   width: 50% ;
-  min-width: 750px;
+  min-width: 700px;
+  line-height: 30px;
+  padding-bottom: 20px;
 }
 
 nav {
-  padding-top: 3px;
-  background-color: ivory;
+  font-family: "pirata one";
+  font-size: 25px;
 }
 
 nav .border {
-  padding: 0 5px;
-  border-right: 2px solid grey;
+  padding: 0 20px;
 }
 
-nav .last {
-  padding-left: 5px;
-}
 
 .sticky-footer {
   position: fixed;
@@ -37,6 +43,7 @@ nav .last {
   bottom: 0;
   width: 100%;
   text-align: center;
+  background-color: black;
   /* z-index: -1; */
 }
 
@@ -60,6 +67,7 @@ aside .buttons {
 
 h2 {
   text-align: center;
+  /* add shadow */
 }
 
 .contact, .about {
@@ -72,4 +80,32 @@ h2 {
 
 .go-image {
   display: flex;
+}
+
+a {
+  color: #FFFF00;
+}
+
+a:hover {
+  color: #9AAB05;
+  font-size: 20px;
+}
+
+.float-left {
+  float: left;
+  padding-right: 3px;
+}
+
+.float-right {
+  float: right;
+  padding-left: 3px;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.bottom-spacer {
+  margin-bottom: 30px;
 }

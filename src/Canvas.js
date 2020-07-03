@@ -5,10 +5,10 @@ const React = require('react')
 // color scheme yellows
 var colourArray = [
   '#666666',
-  '#ABDB25',
+  '#FFFF00',
   '#999999',
   '#CCCCCC',
-  '#BBCC99'
+  '#999900'
 ] 
 
 var mouse = {
