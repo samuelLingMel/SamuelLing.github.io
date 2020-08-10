@@ -5,6 +5,9 @@ export default function About() {
       <div className="about">
         
         <h2>About Me</h2>
+
+        <p>A <a href="https://drive.google.com/file/d/1Azk6aBjyYZ1jS5gOOqxKJBqmOngijmmF/view?usp=sharing">video profile </a> if you would rather listen than read </p>
+        
         <p>I made a conscious decision to be a coder because I subscribe to the ‘<a href="https://en.wikipedia.org/wiki/Ikigai"> ikigai’</a> philosophy and coding is the intersection of all 4 requirements, passion, vocation, profession and mission for me.</p>
         <p>I played a lot of strategy and puzzle games and my choice of games and approach to games is the same reason I choose to go into science out of high school, because I like problem solving, analytical thinking and the scientific method.</p>
         <img src="https://cdn.mos.cms.futurecdn.net/aakJFSQ2VrYu2iigWjfQPR-320-80.jpg" height='100px' width='100px' alt="" className="float-left"/>
