@@ -21,7 +21,9 @@ class Canvas extends React.Component {
   componentDidMount() {
     const canvas = this.refs.canvas
     var context = canvas.getContext('2d');
-    var words = "Welcome";
+    var words = "Samuel Ling";
+    var aboutOne = "I'm a problem solving, analytical thinker"
+    var aboutTwo = "with a natural curiosity."
   
     function Circle(x, y, dx, dy, radius) {
       this.x = x;
@@ -68,7 +70,7 @@ class Canvas extends React.Component {
     var circleArray = [];
 
     function init(numberCircles) {
-      circleArray = [];
+      // circleArray = [];
       for ( var i = 0; i < numberCircles; i++) {
         var radius = Math.ceil(Math.random() * 3);
         var x = Math.random() * (window.innerWidth - radius * 2) + radius;
@@ -85,13 +87,22 @@ class Canvas extends React.Component {
       for (var i = 0; i < circleArray.length; i++) {
         circleArray[i].update();
       }
-      context.font = '64px serif';
-      context.fillText(words, window.innerWidth / 2 - 100, window.innerHeight / 2 );
     }   
 
     animate();
 
     init(600);
+
+    function WriteText(text, size, yPosition) {
+      this.colour = colourArray[Math.floor(Math.random() * colourArray.length)]
+      context.font = `${size}px Palatino`;
+      context.fillText(text, window.innerWidth / 2 - 100, yPosition );
+
+    }
+    // WriteText()
+      // context.font = '20px Palatino'
+      // context.fillText(aboutOne, window.innerWidth / 2 - 100, window.innerHeight / 2 + window.innerHeight/20 );
+      // context.fillText(aboutTwo, window.innerWidth / 2 - 100, window.innerHeight / 2 + window.innerHeight/10 );
   } 
 
   handleMouseMoveCanvas(e) {

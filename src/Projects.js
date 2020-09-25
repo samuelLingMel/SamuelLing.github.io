@@ -14,7 +14,7 @@ import { Carousel } from 'react-responsive-carousel';
 class Projects extends Component {
   render() {
     return (
-      <Carousel showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
+      <Carousel showArrows={true} onChange={Carousel.onChange} onClickItem={Carousel.onClickItem} onClickThumb={Carousel.onClickThumb}>
         <div>
           <img src="./KH.png" />
           <p className="legend">Legend 1</p>
