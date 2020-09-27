@@ -4,12 +4,16 @@ const React = require('react')
 
 // color scheme yellows
 var colourArray = [
-  '#666666',
-  '#FFFF00',
-  '#999999',
-  '#CCCCCC',
-  '#999900'
+  '#1E5631',
+  '#A4DE02',
+  '#76BA1B',
+  '#4C9A2A',
+  '#ACDF87',
+  '#68BB59'
 ] 
+
+var randomColourOne = colourArray[Math.floor(Math.random() * colourArray.length)];
+var randomColourTwo = colourArray[Math.floor(Math.random() * colourArray.length)];
 
 var mouse = {
     x: undefined,
@@ -21,10 +25,9 @@ class Canvas extends React.Component {
   componentDidMount() {
     const canvas = this.refs.canvas
     var context = canvas.getContext('2d');
-    var words = "Samuel Ling";
-    var aboutOne = "I'm a problem solving, analytical thinker"
-    var aboutTwo = "with a natural curiosity."
-  
+    
+    
+    
     function Circle(x, y, dx, dy, radius) {
       this.x = x;
       this.y = y;
@@ -32,8 +35,8 @@ class Canvas extends React.Component {
       this.dy = dy;
       this.radius = radius;
       this.minRadius = radius;
-      this.maxRadius = Math.floor(Math.random() * 20 + 30)
-      this.colour = colourArray[Math.floor(Math.random() * colourArray.length)]
+      this.maxRadius = Math.floor(Math.random() * 20 + 30);
+      this.colour = colourArray[Math.floor(Math.random() * colourArray.length)];
 
       this.draw = function() {
         context.beginPath();
@@ -87,22 +90,26 @@ class Canvas extends React.Component {
       for (var i = 0; i < circleArray.length; i++) {
         circleArray[i].update();
       }
+
+      var words = "Samuel Ling";
+      var aboutOne = "I'm a problem solving, analytical thinker"
+      var aboutTwo = "with a natural curiosity."
+      context.font = '50px Palatino'
+      context.fillStyle = randomColourOne
+      context.fillText(words, window.innerWidth / 2 - 100, window.innerHeight / 2);
+      
+      context.font = '20px Palatino'
+      context.fillStyle = randomColourTwo
+      context.fillText(aboutOne, window.innerWidth / 2 - 100, window.innerHeight / 2 + window.innerHeight/20);
+      context.fillText(aboutTwo, window.innerWidth / 2 - 100, window.innerHeight / 2 + window.innerHeight/10);
+
     }   
 
     animate();
 
-    init(600);
+    init(500);
 
-    function WriteText(text, size, yPosition) {
-      this.colour = colourArray[Math.floor(Math.random() * colourArray.length)]
-      context.font = `${size}px Palatino`;
-      context.fillText(text, window.innerWidth / 2 - 100, yPosition );
-
-    }
-    // WriteText()
-      // context.font = '20px Palatino'
-      // context.fillText(aboutOne, window.innerWidth / 2 - 100, window.innerHeight / 2 + window.innerHeight/20 );
-      // context.fillText(aboutTwo, window.innerWidth / 2 - 100, window.innerHeight / 2 + window.innerHeight/10 );
+    
   } 
 
   handleMouseMoveCanvas(e) {

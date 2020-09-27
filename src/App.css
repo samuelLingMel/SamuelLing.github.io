@@ -9,8 +9,8 @@
 
 body {
   font-family: 'Libre Baskerville', serif;
-  background-color: black;
-  color: ivory;
+  background-color: ivory;
+  color: #4C9A2A;
 }
 
 .projects main {
@@ -44,7 +44,7 @@ nav .border {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: black;
+  background-color: ivory;
   /* z-index: -1; */
 }
 
@@ -84,11 +84,11 @@ h2 {
 }
 
 a {
-  color: #FFFF00;
+  color: #1E5631;
 }
 
-a:hover {
-  color: #9AAB05;
+nav a:hover {
+  color: #4C9A2A;
   font-size: 20px;
 }
 
