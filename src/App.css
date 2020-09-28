@@ -34,18 +34,24 @@ nav {
 }
 
 nav .border {
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 
-.sticky-footer {
+.sticky-header {
   position: fixed;
   left: 0;
-  bottom: 0;
+  top: 0;
   width: 100%;
   text-align: center;
-  background-color: ivory;
-  /* z-index: -1; */
+  background-color: #1E5631;
+  color: ivory;
+  z-index: 1;
+  padding-bottom: 2px;
+}
+
+.sticky-header a {
+  color: white;
 }
 
 aside .buttons {
@@ -88,7 +94,7 @@ a {
 }
 
 nav a:hover {
-  color: #4C9A2A;
+  color: #A4DE02;
   font-size: 20px;
 }
 
@@ -107,6 +113,7 @@ p {
   margin-bottom: 30px;
 }
 
-.bottom-spacer {
-  margin-bottom: 30px;
+.top-spacer {
+  margin-top: 40px;
 }
+

@@ -21,8 +21,10 @@ class App extends React.Component {
     
     return (
       <div className="App">
-
-          <main className="bottom-spacer">
+          <header>
+            <Nav />
+          </header>
+          <main className="top-spacer">
             <Switch className="switch">
               <Route path='/about'>
                 <About />
@@ -38,9 +40,7 @@ class App extends React.Component {
               </Route>
             </Switch>
           </main>
-        <footer>
-          <Nav />
-        </footer>
+        
       </div>
     )
   }

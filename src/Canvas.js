@@ -49,7 +49,7 @@ class Canvas extends React.Component {
         if (this.x + this.radius > window.innerWidth || this.x - this.radius < 0) {
           this.dx = -this.dx;
         };
-        if (this.y + this.radius > window.innerHeight - 20 || this.y - this.radius < 0) {
+        if (this.y + this.radius > window.innerHeight - 40 || this.y - this.radius < 0) {
           this.dy = -this.dy;
         };
     
@@ -77,7 +77,7 @@ class Canvas extends React.Component {
       for ( var i = 0; i < numberCircles; i++) {
         var radius = Math.ceil(Math.random() * 3);
         var x = Math.random() * (window.innerWidth - radius * 2) + radius;
-        var y = Math.random() * (window.innerHeight - 20 - radius * 2) + radius;
+        var y = Math.random() * (window.innerHeight - 40 - radius * 2) + radius;
         var dx = (Math.random() - 0.5);
         var dy = (Math.random() - 0.5);
         circleArray.push(new Circle(x, y, dx, dy, radius));
@@ -86,7 +86,7 @@ class Canvas extends React.Component {
 
     function animate() {
       requestAnimationFrame(animate);
-      context.clearRect(0, 0, window.innerWidth, window.innerHeight - 20);
+      context.clearRect(0, 0, window.innerWidth, window.innerHeight - 40);
       for (var i = 0; i < circleArray.length; i++) {
         circleArray[i].update();
       }
@@ -125,7 +125,7 @@ class Canvas extends React.Component {
         <canvas ref="canvas" 
           onMouseMove={(e) => {this.handleMouseMoveCanvas(e)}} 
           width={window.innerWidth} 
-          height={window.innerHeight - 20} 
+          height={window.innerHeight - 40} 
         />
       </div>
     )

@@ -8,7 +8,7 @@ import { BrowserRouter as Router,
 
 export default function Nav() {
   return (
-    <nav className='sticky-footer'>
+    <nav className='sticky-header'>
       <Link to='/' className="border">Home</Link>
       <Link to='/about' className="border">About</Link>
       <Link to='/projects' className="border">Projects</Link>
