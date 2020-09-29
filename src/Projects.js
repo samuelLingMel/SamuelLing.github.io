@@ -3,6 +3,8 @@ import memoryGameImg from './memoryGameScreenShot.png'
 import trashureImg from './trashureScreenShot.png'
 import codingWikiImg from './codingWikiScreenShot.png'
 import noughtsAndCrossesImg from './noughtsAndCrossesScreenShot.png'
+import webscrapingImg from './webscrapingScreenShot.png'
+import countdownImg from './countdownScreenShot.png'
 import githubImg from './github.png'
 import trialImg from './trial.png'
 import './Project.css'
@@ -82,6 +84,44 @@ class Projects extends React.Component {
             </div>
             <div class='demo'>
               <a href="https://trashure.herokuapp.com/">
+                <img src={trialImg} alt=""/>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class='card'>
+          <div class='front-face'>
+            <img src={webscrapingImg} alt="" height='300px' width = '300px'/>
+            <h5 class='title'>webScraping</h5>
+          </div>
+          <div class='back-face'> 
+            <div class='github'>
+              <a href="https://github.com/samuelLingMel/Webscraping-books">
+                <img src={githubImg} alt=""/>
+              </a>
+            </div>
+            <div class='demo'>
+              <a href="">
+                <img src={trialImg} alt=""/>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class='card'>
+          <div class='front-face'>
+            <img src={countdownImg} alt="" height='300px' width = '300px'/>
+            <h5 class='title'>Countdown</h5>
+          </div>
+          <div class='back-face'> 
+            <div class='github'>
+              <a href="https://github.com/samuelLingMel/countdown">
+                <img src={githubImg} alt=""/>
+              </a>
+            </div>
+            <div class='demo'>
+              <a href="https://samuellingmel.github.io/countdown/">
                 <img src={trialImg} alt=""/>
               </a>
             </div>
