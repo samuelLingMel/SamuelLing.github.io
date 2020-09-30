@@ -12,8 +12,6 @@ import { BrowserRouter as Router,
   Link,
   useParams 
 } from 'react-router-dom'
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonLast, ButtonFirst } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 
 class App extends React.Component {
   render() {

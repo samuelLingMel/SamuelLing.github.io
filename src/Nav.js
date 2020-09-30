@@ -30,7 +30,7 @@ export default function Nav() {
         <div class='contactText' id='myContact'>
           <p><img src={email} height='25px'/> samuellingmel@gmail.com</p>
           <p><img src={linkedIn} height='25px'/> <a href='https://www.linkedin.com/in/samuellingmel/'>samuelLingMel</a> <img src="https://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png" height="20px" alt=""/></p>
-          <p><a href='https://drive.google.com/file/d/1-9iuA2CBRJjYXnN6aM52cwz05pf6riVj/view?usp=sharing'>resume</a></p>
+          <p><a href='https://drive.google.com/file/d/1sAOzc6-C-kAeej3QVbKDptzYzYf9uTGv/view?usp=sharing'>resume</a></p>
           <p><img src={github} height="25px"/><a href='https://github.com/samuelLingMel'>github</a></p>
         </div>
       </div>
