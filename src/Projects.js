@@ -10,6 +10,11 @@ import trialImg from './trial.png'
 import './Project.css'
 
 class Projects extends React.Component {
+  noDemoPopup = () => {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
   render() {
     return(
       <h1 class='project-grid'>
@@ -93,7 +98,7 @@ class Projects extends React.Component {
         <div class='card'>
           <div class='front-face'>
             <img src={webscrapingImg} alt="" height='300px' width = '300px'/>
-            <h5 class='title'>webScraping</h5>
+            <h5 class='title'>Web Scraping</h5>
           </div>
           <div class='back-face'> 
             <div class='github'>
@@ -102,9 +107,10 @@ class Projects extends React.Component {
               </a>
             </div>
             <div class='demo'>
-              <a href="">
-                <img src={trialImg} alt=""/>
-              </a>
+              <div class="popup">
+                <span class="popuptext" id="myPopup">Sorry, No web demo</span>
+                <img src={trialImg} onClick={this.noDemoPopup} alt=""/>
+              </div>
             </div>
           </div>
         </div>

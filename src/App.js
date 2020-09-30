@@ -1,6 +1,5 @@
 import React from 'react'
 import Projects from './Projects'
-import Contact from './Contact'
 import Canvas from './Canvas'
 import Nav from './Nav'
 import About from './About'
@@ -31,9 +30,6 @@ class App extends React.Component {
               </Route>
               <Route path='/projects'>
                 <Projects />
-              </Route>
-              <Route path='/contact'>
-                <Contact />
               </Route>
               <Route path="/">
                 <Canvas />
