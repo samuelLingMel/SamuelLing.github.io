@@ -138,7 +138,7 @@ p {
 /* The actual popup */
 .contact .contactText {
   visibility: hidden;
-  width: 180px;
+  width: 280px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -146,8 +146,18 @@ p {
   padding: 8px 0;
   position: absolute;
   z-index: 1;
-  bottom: -800%;
+  bottom: -900%;
   left: 100%;
+}
+
+.contactText p {
+  font-size: 25px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.contactText img {
+  padding-right: 4px;
 }
 
 /* Toggle this class - hide and show the popup */

@@ -9,6 +9,7 @@ import { BrowserRouter as Router,
 import email from './email.jpg'
 import linkedIn from './linkedIn.png'
 import github from './github.png'
+import resume from './resume.png'
 
 export default function Nav() {
   const showContactInfo = () => {
@@ -28,10 +29,10 @@ export default function Nav() {
       <div className="border contact" onClick={showContactInfo} >
         Contact
         <div class='contactText' id='myContact'>
-          <p><img src={email} height='25px'/> samuellingmel@gmail.com</p>
-          <p><img src={linkedIn} height='25px'/> <a href='https://www.linkedin.com/in/samuellingmel/'>samuelLingMel</a> <img src="https://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png" height="20px" alt=""/></p>
-          <p><a href='https://drive.google.com/file/d/1sAOzc6-C-kAeej3QVbKDptzYzYf9uTGv/view?usp=sharing'>resume</a></p>
-          <p><img src={github} height="25px"/><a href='https://github.com/samuelLingMel'>github</a></p>
+          <p><img src={email} width='25px'/> samuellingmel@gmail.com</p>
+          <p><img src={linkedIn} width='25px'/> <a href='https://www.linkedin.com/in/samuellingmel/'>samuelLingMel</a> <img src="https://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo.png" height="20px" alt=""/></p>
+          <p><img src={resume} width='25px'/><a href='https://drive.google.com/file/d/1sAOzc6-C-kAeej3QVbKDptzYzYf9uTGv/view?usp=sharing'>resume</a></p>
+          <p><img src={github} width="25px"/><a href='https://github.com/samuelLingMel'>github</a></p>
         </div>
       </div>
     </nav>

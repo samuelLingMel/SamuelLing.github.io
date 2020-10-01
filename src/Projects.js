@@ -25,12 +25,12 @@ class Projects extends React.Component {
           </div>
           <div class='back-face'> 
             <div class='github'>
-              <a href="https://github.com/samuelLingMel/wdi-fundamentals-memorygame">
+              <a href="https://github.com/samuelLingMel/wdi-fundamentals-memorygame" target="_blank">
                 <img src={githubImg} alt=""/>
               </a>
             </div>
             <div class='demo'>
-              <a href="https://samuellingmel.github.io/memory-game/index.html">
+              <a href="https://samuellingmel.github.io/memory-game/index.html" target="_blank">
                 <img src={trialImg} alt=""/>
               </a>
             </div>
@@ -45,12 +45,12 @@ class Projects extends React.Component {
           </div>
           <div class='back-face'> 
             <div class='github'>
-              <a href="https://github.com/samuelLingMel/Coding-Wiki">
+              <a href="https://github.com/samuelLingMel/Coding-Wiki" target="_blank">
                 <img src={githubImg} alt=""/>
               </a>
             </div>
             <div class='demo'>
-              <a href="https://mysterious-thicket-44355.herokuapp.com/">
+              <a href="https://mysterious-thicket-44355.herokuapp.com/" target="_blank">
                 <img src={trialImg} alt=""/>
               </a>
             </div>
@@ -60,16 +60,16 @@ class Projects extends React.Component {
         <div class='card'>
           <div class='front-face'>
             <img src={noughtsAndCrossesImg} alt="" height='300px' width = '300px'/>
-            <h5 class='title'>Noughts and Crosses</h5>
+            <h5 class='title'>Epic Noughts and Crosses</h5>
           </div>
           <div class='back-face'> 
             <div class='github'>
-              <a href="https://github.com/samuelLingMel/Noughts-and-Crosses">
+              <a href="https://github.com/samuelLingMel/Noughts-and-Crosses" target="_blank">
                 <img src={githubImg} alt=""/>
               </a>
             </div>
             <div class='demo'>
-              <a href="https://samuellingmel.github.io/Noughts-and-Crosses/">
+              <a href="https://samuellingmel.github.io/Noughts-and-Crosses/" target="_blank">
                 <img src={trialImg} alt=""/>
               </a>
             </div>
@@ -83,12 +83,12 @@ class Projects extends React.Component {
           </div>
           <div class='back-face'> 
             <div class='github'>
-              <a href="https://github.com/samuelLingMel/trashure">
+              <a href="https://github.com/samuelLingMel/trashure" target="_blank">
                 <img src={githubImg} alt=""/>
               </a>
             </div>
             <div class='demo'>
-              <a href="https://trashure.herokuapp.com/">
+              <a href="https://trashure.herokuapp.com/" target="_blank">
                 <img src={trialImg} alt=""/>
               </a>
             </div>
@@ -102,7 +102,7 @@ class Projects extends React.Component {
           </div>
           <div class='back-face'> 
             <div class='github'>
-              <a href="https://github.com/samuelLingMel/Webscraping-books">
+              <a href="https://github.com/samuelLingMel/Webscraping-books" target="_blank">
                 <img src={githubImg} alt=""/>
               </a>
             </div>
