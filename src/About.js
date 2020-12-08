@@ -18,7 +18,7 @@ export default function About() {
       <img src="https://thumbor.forbes.com/thumbor/640x640/https://blogs-images.forbes.com/chrismyers/files/2018/02/ikigai-1.jpg?width=960" height='300px' width='300px' className="float-right" alt=""/>
       <p>After trying to teach myself a bit of python utilising online resources, I wanted to accelerate my learning and decisively signed up for the software developer immersive at General Assembly. </p>
       <p>I found that coding is the place where my incisiveness can shine, the world is in desperate need of good, are willing to pay and after my course at General Assembly I can genuinely say that I loved it. </p>
-      <p>The TL;DR to take away from this is: Coding is a mixture of what I’m good at, what I love, what the world needs and what I can be paid by doing.</p>
+      <p>The <span className='emphasis'>TL;DR</span> to take away from this is: Coding is a mixture of what I’m good at, what I love, what the world needs and what I can be paid by doing.</p>
       <p>Right now I am trying to wrap my head around Amazon Web Services and CI/CD practices and will hopefully add another project using them.</p>
     </div>
     

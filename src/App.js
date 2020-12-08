@@ -17,19 +17,19 @@ class App extends React.Component {
   render() {
     
     return (
-      <div className="App">
+      <div className='App'>
           <header>
             <Nav />
           </header>
-          <main className="top-spacer">
-            <Switch className="switch">
+          <main className='top-spacer'>
+            <Switch className='switch'>
               <Route path='/about'>
                 <About />
               </Route>
               <Route path='/projects'>
                 <Projects />
               </Route>
-              <Route path="/">
+              <Route path='/'>
                 <Canvas />
               </Route>
             </Switch>

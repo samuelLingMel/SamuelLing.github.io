@@ -181,3 +181,7 @@ p {
 .contactText {
   cursor: default;
 }
+
+.emphasis {
+  font-weight: bold;
+}
