@@ -7,6 +7,7 @@ import webscrapingImg from './webscrapingScreenShot.png'
 import countdownImg from './countdownScreenShot.png'
 import githubImg from './github.png'
 import trialImg from './trial.png'
+import almbcImg from './ALMBC.png'
 import './Project.css'
 
 class Projects extends React.Component {
@@ -128,6 +129,25 @@ class Projects extends React.Component {
             </div>
             <div class='demo'>
               <a href="https://samuellingmel.github.io/countdown/">
+                <img src={trialImg} alt=""/>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class='card'>
+          <div class='front-face'>
+            <img src={almbcImg} alt="" height='300px' width = '300px'/>
+            <h5 class='title'>ALMBC Dashboard</h5>
+          </div>
+          <div class='back-face'> 
+            <div class='github'>
+              <a href="https://github.com/samuelLingMel/ALMBC-dashboard" target="_blank">
+                <img src={githubImg} alt=""/>
+              </a>
+            </div>
+            <div class='demo'>
+              <a href="https://samuellingmel.github.io/ALMBC-dashboard/?topics=0-1-2-3&locations=0-1" target="_blank">
                 <img src={trialImg} alt=""/>
               </a>
             </div>
